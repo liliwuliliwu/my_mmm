@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢网比价网-手机版</title>
+    <link rel="stylesheet" href="css/mui.css"/>
+    <link rel="stylesheet" href="fonts/iconfont.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="less/prolist.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<!--头部 -->
+<header class="clearfix maincolor">
+    <div class="fl header_l"><a href="index.html"><img src="images/header_logo.png" alt=""/></a></div>
+    <div class="fr header_r"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+</header>
+<!-- 搜索-->
+<div class="header_search clearfix">
+    <input type="search" placeholder="请输入你想比价的商品"/>
+
+    <div class="search_cont maincolor">搜索</div>
+</div>
+<!-- 中间主体不同地方-->
+<div class="prolist" id="target">
+    <div class="top_head">
+        <div class="top_head_con">
+        </div>
+        <input type="button" value="筛选"/>
+    </div>
+    <!--&lt;!&ndash;//商品主体&ndash;&gt;-->
+    <div class="product">
+        <ul class="mui-table-view" id="menu_list">
+            <!--&lt;!&ndash; 缓存动画&ndash;&gt;-->
+            <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+            </div>
+            <!-- 模板商品-->
+            <!--<li class=" mui-media model_li">-->
+            <!--<a href="javascript:;" class="b_bottom">-->
+            <!--<div class="mui-pull-left m_r10"><img-->
+            <!--src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg"-->
+            <!--alt="移动端凑单品：海天 鲜味 生抽 1.28L"></div>-->
+            <!--<div class="product_body ">-->
+            <!--<div class="cont">移动端凑单品：海天 鲜味 生抽 1.28L移动端凑单品：海天 鲜味 生抽1.28L</div>-->
+            <!--<p style="color: #ed0000;font-size: 18px">-->
+            <!--<span>&yen;</span>1899-->
+            <!--</p>-->
+
+            <!--<div class="other ">-->
+            <!--<div class="fl">有1人报价</div>-->
+            <!--<div class="fr">有3444人评价</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</a>-->
+            <!--</li>-->
+
+            <!--<li class=" mui-media model_li">-->
+            <!--<a href="javascript:;" class="b_bottom">-->
+            <!--<div class="mui-pull-left m_r10"><img-->
+            <!--src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg"-->
+            <!--alt="移动端凑单品：海天 鲜味 生抽 1.28L"></div>-->
+            <!--<div class="product_body ">-->
+            <!--<div class="cont">移动端凑单品：海天 鲜味 生抽 1.28L移动端凑单品：海天 鲜味 生抽1.28L</div>-->
+            <!--<p style="color: #ed0000;font-size: 18px">-->
+            <!--<span>&yen;</span>1899-->
+            <!--</p>-->
+
+            <!--<div class="other ">-->
+            <!--<div class="fl">有1人报价</div>-->
+            <!--<div class="fr">有3444人评价</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</a>-->
+            <!--</li>-->
+
+        </ul>
+    </div>
+    <!--&lt;!&ndash; 分页&ndash;&gt;-->
+
+    <div class="con_bottom clearfix">
+        <div><a href="#" id="pre" >上一页</a></div>
+        <div>
+            <select style="padding-left: 32px" id="select" >
+                <!--<option value="">1&nbsp;/&nbsp;2</option>-->
+                <!--<option value="">2&nbsp;/&nbsp;2</option>-->
+            </select>
+        </div>
+        <div><a  href="#"  id="next">下一页</a></div>
+    </div>
+
+</div>
+
+
+<!-- 底部-->
+
+<div class="footer">
+    <div class="foot_regist">
+        <a href="login.html">登录</a><a href="reg.html">注册</a><a href="#"><i class="iconfont icon-xiangshang-copy"></i></i>返回顶部</a>
+    </div>
+    <div class="foot-cont">
+        <p class="foot_foot">
+            <a href="#" style="color: red">手机APP下载</a>
+            <a href="#">慢慢买手机版</a> -- 掌上比价平台
+        </p>
+
+        <p><a href="#">m.manmanbuy.com</a></p>
+    </div>
+</div>
+<!-- 慢慢买下载固定在底部的-->
+<div class="fixed">
+    <a href="#"><img src="images/manmanxiazai.png" alt=""/></a>
+</div>
+
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<!--<script src="lib/bootstrap/js/bootstrap.js"></script>-->
+<script src="lib/template.js"></script>
+<script src="js/prolist.js"></script>
+<script type="text/html" id="listtit">
+    {{if result}}
+    <a href="index.html">首页</a>&nbsp;>
+    <a href="category.html">全部分类</a>&nbsp;>
+    <a href="#">{{result[0].category}}</a>
+    {{/if}}
+</script>
+<script type="text/html" id="listcat">
+    {{if result}}
+    <!-- 模板商品-->
+    {{each result as value i}}
+    <li class=" mui-media model_li">
+        <a href="bijia.html?id={{value.productId}}" class="b_bottom">
+            <div class="mui-pull-left m_r10">{{#value.productImg}}</div>
+            <div class="product_body ">
+                <div class="cont">{{value.productName}}</div>
+                <p style="color: #ed0000;font-size: 18px">
+                    <span>&yen;</span>{{value.productPrice.slice(1)}}
+                </p>
+
+                <div class="other ">
+                    <div class="fl">
+                        {{value.productQuote=(/\d+/.exec(value.productQuote))?'有'+(/\d+/.exec(value.productQuote)[0])+'人报价':value.productQuote}}
+                    </div>
+                    <div class="fr">有{{value.productCom=/\d+/.exec(value.productCom)[0]}}人评价</div>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+</html>

@@ -1,0 +1,72 @@
+/*头部*/
+a{
+    color: #333;
+}
+header{
+    height: 44px;
+    background-color: #f4483e;
+    text-align: center;
+    line-height: 44px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Microsolf-yahei";
+}
+
+.header_r{
+    padding: 5px;
+    line-height: 10px;
+}
+.header_l{
+    line-height: 10px;
+    margin-left: -4px;
+    margin-top: -3px;
+}
+header span{
+    color: white;
+}
+/* <!-- 优惠券内容-->*/
+.coupon_content .mui-grid-view.mui-grid-9{
+    background-color: #fff;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+}
+.coupon_content .mui-grid-view.mui-grid-9 .mui-table-view-cell{
+    border-right: none;
+    border-bottom: 0;
+    padding: 0;
+    padding-left: 6px;
+    padding-top:6px ;
+}
+.coupon_content .mui-grid-view.mui-grid-9 .mui-table-view-cell a{
+    border: 1px solid #eeeeee;
+    padding-top: 5px;
+}
+.coupon_content .mui-grid-view.mui-grid-9 .mui-table-view-cell a img{
+    width: 50px;
+}
+.coupon_content .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+    margin-top: 0;
+    color:#5a5a5a;
+    font-size: 12px;
+}
+/*底部*/
+footer .foot_top{
+    font-size: 14px;
+   height: 82px;
+    padding-top:20px;
+    padding-left: 8px;
+    margin-left: -8px;
+    background-color: #fff;
+    line-height: 36px;
+    padding-bottom: 26px;
+   /*border-top: solid 1px #ebebeb;*/
+}
+footer .foot_top .foot_top_top{
+    border-top: solid 1px #ebebeb;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+    padding-left: 8px;
+}

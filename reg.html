@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢网比价网-手机版</title>
+    <link rel="stylesheet" href="fonts/iconfont.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="less/login.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<div>
+    <!--头部 -->
+    <header class="clearfix maincolor">
+        <div class="fl header_l"><a href="index.html"><img src="images/header_logo.png" alt=""/></a> </div>
+        <div class="fr header_r"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!-- 搜索-->
+    <div class="header_search clearfix">
+        <input  type="search" placeholder="请输入你想比价的商品"/>
+        <div class="search_cont maincolor">搜索</div>
+    </div>
+    <!-- 中间主体不同地方-->
+    <div class="main" >
+        <div class="username item">
+            <input type="text" value="请输入用户名" onfocus="if(this.value=='请输入用户名')this.value='';"
+                   onblur="if(this.value=='')this.value='请输入用户名';"  />
+            <!--<p><span>123</span></p>-->
+        </div>
+        <div class="password item">
+            <input type="text" value="密码(6-20个字符)"/>
+        </div>
+        <div class="password item">
+            <input type="text" value="请输入手机号"/>
+        </div>
+        <div class="password item identify">
+            <img src="images/kdj.jpg" alt=""/>
+            <input type="text"  class="load"/>
+            <input type="button" class="btn" value="获取手机验证码"/>
+        </div>
+        <div class="password item">
+            <input type="text" value="请输入手机验证码"/>
+        </div>
+        <div class="password item">
+            <input type="text" value="请输入邮箱"/>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- 底部-->
+    <div class="footer">
+        <a href="#" class="much maincolor">登录</a>
+        <div class="checkbox"><input type="checkbox" />&nbsp;一个月内自动登录</div>
+        <div class="remind">
+            <a href="#"> <h3 class="">
+                忘记密码：请电脑登录www.manmanbuy.com找回
+            </h3></a>
+        </div>
+        <div class="foot_regist">
+            <a href="login.html" >登录</a><a  href="#" >注册</a><a href="#"><i class="iconfont icon-xiangshang-copy"></i>返回顶部</a>
+        </div>
+        <div class="foot-cont">
+            <p class="foot_foot">
+                <a href="#" style="color: red">手机APP下载</a>
+                <a href="#">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <p><a href="#">m.manmanbuy.com</a></p>
+        </div>
+    </div>
+    <!-- 慢慢买下载固定在底部的-->
+    <div class="fixed">
+        <a href="#"><img src="images/manmanxiazai.png" alt=""/></a>
+    </div>
+</div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/reg.js"></script>
+</html>

@@ -1,0 +1,262 @@
+/*进行默认样式的清除*/
+*,
+:before,
+:after{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+body{
+    font-size: 14px;
+    color: #333;
+    font-family: "microsoft yahei","sans-serif";
+}
+ul,ol{
+    list-style: none;
+}
+* a:hover,a:focus{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after,.clearfix::before{
+    content: "";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.m_r10{
+    margin-right: 10px;
+}
+.m_l10{
+    margin-left: 10px;
+}
+.m_t10{
+    margin-top: 10px;
+}
+.m_b10{
+    margin-bottom: 10px;
+}
+.maincolor{
+    background-color:#ff841d;
+}
+.fontcolor{
+    color: #ff6c00;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.show_inline{
+    display: inline-block;
+}
+/*头部公共*/
+header{
+    height: 50px;
+}
+.header_l{
+    /*width: 75%;*/
+}
+.header_l{
+    padding: 12px;
+    margin-left: 5px;
+}
+.header_l a,.header_r a{
+    display: block;
+}
+.header_l a img{
+    height: 25px;
+}
+.header_r{
+    padding: 7px;
+}
+.header_r img{
+    height: 34px;
+}
+/*主页搜索*/
+.header_search{
+    /*height: 30px;*/
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+.header_search input[type='search']{
+    height: 30px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    margin-bottom: 0px;
+    padding: 0;
+    padding-left: 30px;
+    text-align: left;
+    width: 90%;
+}
+.header_search .search_cont{
+    position: absolute;
+    width: 63px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+    top: 10px;
+    right: 10px;
+}
+
+/*底部*/
+.footer{
+    /*height: 50px;*/
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+.footer>a{
+    display: block;
+    line-height: 30px;
+    background-image: linear-gradient(#ffffff, #f4f4f4);
+    font-size: 13px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin: 10px;
+    text-align: center;
+    /*color: hsl(0, 58%, 50%);*/
+}
+.footer .shouye_cuxiao{
+    margin-top: 20px;
+    padding-top: 0;
+    height: 36px;
+    margin-bottom: 10px;
+
+}
+.foot_regist{
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+}
+.foot_regist a{
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    /*color: hsl(0, 58%, 50%);*/
+    background-color: #EFEFEF;
+}
+.foot_regist a:first-of-type{
+    width: 30%;
+    border-right:1px solid #c4c4c4 ;
+}
+.foot_regist i{
+    color: #767877;
+    vertical-align: middle;
+}
+.foot_regist a:nth-of-type(2){
+    width: 30%;
+    border-right:1px solid #c4c4c4 ;
+}
+.foot_regist a:nth-of-type(3){
+    width: 40%;
+}
+.footer .foot-cont{
+    background: #efefef;
+    font-size: 12px;
+    padding: 15px 0;
+    color: #5a5a5a;
+}
+.foot-cont p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0;
+    color: #333;
+
+}
+/*固定的下载*/
+.fixed{
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 0;
+}
+.fixed a{
+    display: block;
+}
+.fixed a img{
+    width: 60px;
+}
+/*加载动画*/
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: #67CF22;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+           -webkit-transform: scaleY(1.0);
+       }
+}

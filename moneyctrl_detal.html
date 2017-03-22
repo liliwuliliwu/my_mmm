@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>
+
+    </title>
+    <link rel="stylesheet" href="fonts/iconfont.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="less/moneyctrldetail.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body>
+<div class="">
+    <!--头部 -->
+    <header class="clearfix maincolor">
+        <div class="fl header_l"><a href="#" class="arrow"><span class="iconfont icon-jiantou-copy"></span></a>
+        </div>
+        国内折扣
+        <div class="fr header_r"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--具体内容-->
+    <div class="coupon_content">
+        <div class="top_cont">
+            <!--<h3 class="titl">限华南：激浪 柠檬味 可乐型汽水 330mL*12罐</h3>-->
+
+            <!--<p class="price fontcolor">15.9元</p>-->
+
+            <!--<div class="some">-->
+                <!--<span class="mall">1号店</span>&nbsp;-->
+                <!--<span class="time">03-18 19:19</span>&nbsp;-->
+                <!--<span class="from">ShortZero / 慢慢买</span>-->
+            <!--</div>-->
+            <!--<div class="detail">-->
+                <!--<div class="info info1">-->
+                    <!--<img class="fr" src="images/kdj.jpg" alt=""/>-->
+                    <!--<p>1号店报价15.9元，仅限华南地区特价，近期低价。柠檬味的东西都不会太难喝，喜欢碳酸饮料的慢友可以关注一下。1号店报价15.9元，仅限华南地区特价，近期低价。柠檬味的东西都不会太难喝，喜欢碳酸饮料的慢友可以关注一下。1号店报价15.9元，仅限华南地区特价，近期低价。柠檬味的东西都不会太难喝，喜欢碳酸饮料的慢友可以关注一下。</p>-->
+                <!--</div>-->
+                <!--<div class="info info2">-->
+                    <!--<p>-->
+                        <!--对于激浪的印象首先应该是超市货架上那一抹荧光绿，瓶子颜色真是亮骚。碳酸很足，绵密气泡，酷劲十足，规格330mL*12罐。</p>-->
+                    <!--<div class="img">-->
+                        <!--<img src="images/kdj.jpg" alt="" class="big"/>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+
+            <!--</div>-->
+        </div>
+        <div class="city"></div>
+        <div class="buy">
+            <a href="#">前往购买</a>
+        </div>
+        <div class="ewm">
+            <img src="images/mmbweixin2.png" alt=""/>
+        </div>
+        <div class="comment">
+
+        </div>
+    </div>
+
+
+    <!-- 底部-->
+    <footer>
+        <div class="footer">
+
+            <div class="foot_regist">
+                <a href="login.html">登录</a><a href="reg.html">注册</a><a href="#"><i
+                    class="iconfont icon-xiangshang-copy"></i>返回顶部</a>
+            </div>
+            <div class="foot-cont">
+                <p class="foot_foot">
+                    <a href="#" style="color: red">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a> -- 掌上比价平台
+                </p>
+
+                <p><a href="#">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed">
+        <a href="#"><img src="images/manmanxiazai.png" alt=""/></a>
+    </div>
+
+</div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/template.js"></script>
+<script src="js/moneyctrl_detail.js"></script>
+</html>
+<!--内容模板-->
+<script type="text/html" id="cont_top">
+    {{if result}}
+    <h3 class="titl">{{result[0].productName}}</h3>
+
+    <p class="price fontcolor">{{result[0].productPinkage}}</p>
+
+    <div class="some">
+        <span class="mall">{{result[0].productFrom}}</span>&nbsp;
+        <span class="time">{{result[0].productTime}}</span>&nbsp;
+        <span class="from">{{result[0].productTips}}</span>
+    </div>
+    <div class="detail">
+        <div class="info info1">
+           {{#result[0].productImg2}}
+            <p>{{result[0].productInfo2}}</p>
+        </div>
+        <div class="info info2">
+            <p>{{result[0].productInfo1}}</p>
+            <div class="img">
+                {{#result[0].productImg3}}
+            </div>
+
+        </div>
+
+    </div>
+    {{/if}}
+</script>
+<!--国内折扣的详情页-->
+<script type="text/html" id="inlanddiscount">
+    {{if result}}
+    <h3 class="titl">{{result[0].productName}}</h3>
+
+    <p class="price fontcolor">{{result[0].productPrice}}</p>
+
+    <div class="some">
+        <span class="mall">{{result[0].productFrom}}</span>&nbsp;
+        <span class="time">{{result[0].productTime}}</span>&nbsp;
+        <span class="from">{{result[0].productTips}}</span>
+    </div>
+    <div class="detail">
+        <div class="info info1 clearfix">
+            {{#result[0].productImg}}
+            <p>{{result[0].productInfo}}</p>
+        </div>
+        <div class="info info2">
+            <p>{{result[0].productInfo1}}</p>
+            <div class="img">
+                {{#result[0].productImg3}}
+            </div>
+
+        </div>
+
+    </div>
+    {{/if}}
+</script>
+

@@ -1,0 +1,122 @@
+@charset "utf-8";
+body {
+  background: #efefef;
+}
+a {
+  color: #333;
+}
+header {
+  height: 44px;
+  background-color: #f4483e;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Microsolf-yahei";
+}
+.header_r {
+  padding: 5px;
+  line-height: 10px;
+}
+.header_l {
+  height: 44px;
+  position: relative;
+  width: 40px;
+  text-align: center;
+}
+.header_l .arrow {
+  position: absolute;
+  top: 0;
+  height: 44px;
+  width: 40px;
+  left: 0;
+}
+.header_l .arrow span {
+  font-size: 18px;
+}
+header span {
+  color: white;
+}
+.coupon_content .cont li {
+  padding: 14px 8px;
+  background-color: white;
+  height: 128px;
+}
+.coupon_content .cont li a {
+  display: block;
+  height: 100px;
+}
+.coupon_content .cont li a .img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  float: left;
+}
+.coupon_content .cont li a .img img {
+  width: 100px;
+  height: 100px;
+}
+.coupon_content .cont li a .content {
+  overflow: hidden;
+}
+.coupon_content .cont li a .content .title {
+  height: 57px;
+}
+.coupon_content .cont li a .content .other {
+  margin-top: 10px;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.coupon_content .cont li a .content .other .iconfont {
+  font-size: 18px;
+}
+.coupon_content .cont li a .content .other .iconfont i {
+  font-style: normal;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+  vertical-align: middle;
+}
+.con_bottom {
+  padding-top: 20px;
+}
+.con_bottom div {
+  float: left;
+  width: 33.3%;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+.con_bottom div select {
+  width: 100px;
+  height: 34px;
+  border: 1px solid #ccc  !important;
+}
+.con_bottom div a {
+  display: inline-block;
+  width: 82px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  background: -moz-linear-gradient(top, #f1f1f1, #d4d4d4);
+  background: -o-linear-gradient(top, #f1f1f1, #d4d4d4);
+  border-bottom: 1px solid #bababa;
+}
+/*底部*/
+footer .foot_top {
+  font-size: 14px;
+  height: 82px;
+  padding-top: 20px;
+  padding-left: 8px;
+  margin-left: -8px;
+  background-color: #fff;
+  line-height: 36px;
+  padding-bottom: 26px;
+  /*border-top: solid 1px #ebebeb;*/
+}
+footer .foot_top .foot_top_top {
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  padding-left: 8px;
+}

@@ -1,0 +1,231 @@
+@charset "utf-8";
+body{
+  background: #efefef;
+}
+a{
+  color: #333;
+}
+header{
+  height: 44px;
+  background-color: #f4483e;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Microsolf-yahei";
+}
+.header_r{
+  padding: 5px;
+  line-height: 10px;
+
+}
+.header_l{
+  height: 44px;
+  position: relative;
+  width: 40px;
+  text-align: center;
+  .arrow{
+    position: absolute;
+    top: 0;
+    height: 44px;
+    width: 40px;
+    left: 0;
+    span{
+      font-size: 18px;
+    }
+  }
+}
+header span{
+  color: white;
+}
+
+
+//主体内容的导航栏
+.coupon_content .topbar .tit{
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+    height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #ccc;
+  padding-right: 47px;
+  position: relative;
+  background-color: #fff;
+   li{
+     float: left;
+     width: 33.33%;
+     text-align: center;
+     font-size: 16px;
+     span{
+        font-size: 18px;
+       position: relative;
+       left: -5px;
+     }
+     span:before{
+       position: absolute;
+       left: 0;
+     }
+     strong{
+       font-weight: normal;
+     }
+   }
+  li.on span::before{
+    transform: rotate(180deg);
+  }
+  .search{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 47px;
+    height: 37px;
+    //background-color: blue;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    span{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      font-size: 25px;
+    }
+  }
+}
+
+.coupon_content .topbar{
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+  position: relative;
+  .top_three{
+    top:38px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    //height: 100px;
+    z-index: 100;
+    background-color: white;
+    li{
+      line-height: 40px;
+      padding: 0px 10px;
+      color: #5a5a5a;
+      font-size: 16px;
+      color: #333;
+      border-bottom: 1px solid #dadada;
+      position: relative;
+    }
+    li.active:after{
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      position: absolute;
+      top: 50%;
+      margin-top: -9px;
+      right: 15px;
+      background-image:url("../images/dui.jpg");
+      background-repeat:no-repeat;
+    }
+  }
+}
+
+//主体内容
+
+.coupon_content .listall{
+  padding-bottom: 30px;
+  //background: #fff;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.coupon_content .list{
+  margin-top: 7px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  a{
+    display: block;
+    margin: 4px;
+    margin-bottom: 0;
+    background-color: #fff;
+    .img{
+      width: 100%;
+      position: relative; // 使用相对定位
+      height: 0; // 高度设置为0，使用padding来设置高度
+      overflow: hidden;
+      padding-bottom:100%;
+    }
+      img{
+        position: absolute; // 使用绝对定位
+        //width: 100%; // 宽高为容器的宽高
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    .tite{
+      color: #333;
+      padding: 0 8px;
+      font-size: 12px;
+      text-align: left;
+      line-height: 14px;
+      height: 14px;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      margin-top: 5px;
+    }
+    .price{
+      color: #ff6c00;
+      font-size: 20px;
+      padding: 6px 8px;
+      text-align: left;
+      overflow: hidden;
+      line-height: 18px;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部*/
+footer .foot_top{
+  font-size: 14px;
+  height: 82px;
+  padding-top:20px;
+  padding-left: 8px;
+  margin-left: -8px;
+  background-color: #fff;
+  line-height: 36px;
+  padding-bottom: 26px;
+  /*border-top: solid 1px #ebebeb;*/
+}
+footer .foot_top .foot_top_top{
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+  padding-left: 8px;
+}

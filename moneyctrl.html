@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>
+        最新优惠 - 省钱控 - 慢慢买
+    </title>
+    <link rel="stylesheet" href="fonts/iconfont.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="less/moneyctrl.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body>
+<div class="">
+    <!--头部 -->
+    <header class="clearfix maincolor">
+        <div class="fl header_l"><a href="index.html" class="arrow"><span class="iconfont icon-jiantou-copy"></span></a>
+        </div>
+        省钱控 - 最新优惠
+        <div class="fr header_r"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--具体内容-->
+    <div class="coupon_content">
+        <ul class="cont">
+            <!-- 缓存动画-->
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+            <!-- 商品内容-->
+            <!--<li class="">-->
+                <!--<a href="#">-->
+                    <!--<div class="img"><img src="images/kdj.jpg" alt=""/></div>-->
+                    <!--<div class="content">-->
+                        <!--<div class="title">David Archy DA 男士经典三角内裤 4条装 <span class="fontcolor">39元，仅XL码</span></div>-->
+                        <!--<div class="other clearfix">-->
+                            <!--<span class="mall fl">中国亚马逊 | 03-18 16:50</span>-->
+                            <!--<span class="fr iconfont icon-pinglun"><i>0</i></span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</a>-->
+            <!--</li>-->
+
+        </ul>
+    </div>
+
+    <!-- 分页-->
+    <div class="con_bottom clearfix">
+        <div><a href="#" id="pre" >上一页</a></div>
+        <div>
+            <select style="padding-left: 32px" id="select" >
+                <!--<option value="">1&nbsp;/&nbsp;2</option>-->
+                <!--<option value="">2&nbsp;/&nbsp;2</option>-->
+            </select>
+        </div>
+        <div><a  href="#"  id="next">下一页</a></div>
+    </div>
+    <!-- 底部-->
+    <footer>
+        <div class="footer">
+            <div class="foot_top">
+                <div class="foot_top_top"><a href="index.html">首页</a>&nbsp;>&nbsp;<a href="#">省钱控</a></div>
+            </div>
+            <div class="foot_regist">
+                <a href="login.html">登录</a><a href="reg.html">注册</a><a href="#"><i
+                    class="iconfont icon-xiangshang-copy"></i>返回顶部</a>
+            </div>
+            <div class="foot-cont">
+                <p class="foot_foot">
+                    <a href="#" style="color: red">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a> -- 掌上比价平台
+                </p>
+
+                <p><a href="#">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed">
+        <a href="#"><img src="images/manmanxiazai.png" alt=""/></a>
+    </div>
+
+</div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/template.js"></script>
+<script src="js/moneyctrl.js"></script>
+
+</html>
+<!--内容模板-->
+<script type="text/html" id="tem_cont">
+    {{if result}}
+    {{each result as value i}}
+    <li class="">
+        <a href="moneyctrl_detal.html?productId={{value.productId}}#moneyctrl">
+            <div class="img">{{#value.productImgSm}}</div>
+            <div class="content">
+                <div class="title">{{value.productName}}<span class="fontcolor">{{value.productPinkage}}</span></div>
+                <div class="other clearfix">
+                    <span class="mall fl">{{value.productFrom}} | {{value.productTime}}</span>
+                    <span class="fr iconfont icon-pinglun"><i>{{value.productComCount?/(\d+)/.exec(value.productComCount)[0]:0}}</i></span>
+                </div>
+            </div>
+
+        </a>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>

@@ -1,0 +1,100 @@
+@charset "utf-8";
+body {
+  background-color: #f2f2f2;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+.header_search {
+  background-color: #fff;
+}
+.nav {
+  height: 36px;
+  background-color: #ebebeb;
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  font-size: 14px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+  background: -o-linear-gradient(top, #ffffff, #ebebeb);
+}
+.hot {
+  font-size: 16px;
+  color: #874604;
+  height: 40px;
+  padding-left: 10px;
+  line-height: 40px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+.cat {
+  padding: 5px;
+}
+.cat .panel-group {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.cat .panel {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.cat .panel-group .panel {
+  margin-top: 0px;
+}
+.cat .panel-group .panel .panel-heading {
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: 0;
+}
+.cat .panel-group .panel .panel-heading .panel-title a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  font-weight: 700;
+}
+.cat .panel-group .panel .panel-heading .panel-title a:hover,
+.cat .panel-group .panel .panel-heading .panel-title a:focus {
+  text-decoration: none;
+}
+.cat .panel-group .panel .panel-heading .panel-title {
+  position: relative;
+}
+.cat .panel-group .panel .panel-heading .panel-title span {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  color: #888;
+}
+.cat .panel-group .panel .panel-body {
+  border: none;
+  padding: 0px;
+}
+.cat .panel-group .panel .panel-body table {
+  width: 100%;
+}
+.cat .panel-group .panel .panel-body table td {
+  float: left;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  width: 33.33%;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.cat .panel-group .panel .panel-body table td a {
+  display: block;
+  color: #333;
+  text-align: center;
+}
+.cat .panel-group .panel .panel-body table td:nth-of-type(3n) {
+  border-right: none;
+}
+.footer .foot_regist i {
+  margin-right: 2px;
+  font-size: 16px;
+  margin-top: -5px;
+}

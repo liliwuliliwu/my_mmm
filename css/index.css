@@ -1,0 +1,248 @@
+body{
+    background: #fff;
+}
+.mm_layout{
+    min-width: 300px;/*适配小屏幕设备  为了保持布局的正常  设置比320px还小的屏幕的时候做适配*/
+    max-width: 640px;/*在行业当中  设计图一般是640px 如果不限制那么图片就会被拉伸  页面的显示效果就差*/
+    margin: 0 auto;
+    /*height: 1000px;*/
+    /*background-color: pink;*/
+    position: relative;
+}
+/*头部*/
+/*header{*/
+    /*height: 50px;*/
+/*}*/
+/*.header_l{*/
+    /*/!*width: 75%;*!/*/
+/*}*/
+/*.header_l{*/
+    /*padding: 12px;*/
+    /*margin-left: 5px;*/
+/*}*/
+/*.header_l a,.header_r a{*/
+    /*display: block;*/
+/*}*/
+/*.header_l a img{*/
+    /*height: 25px;*/
+/*}*/
+/*.header_r{*/
+    /*padding: 7px;*/
+/*}*/
+/*.header_r img{*/
+    /*height: 34px;*/
+/*}*/
+/*搜索*/
+/*.header_search{*/
+    /*/!*height: 30px;*!/*/
+    /*padding: 10px;*/
+    /*border-bottom: 1px solid #e6e6e6;*/
+    /*position: relative;*/
+/*}*/
+/*.header_search input[type='search']{*/
+    /*height: 30px;*/
+    /*background-color: #f1f1f1;*/
+    /*border-radius: 15px;*/
+    /*margin-bottom: 0px;*/
+    /*padding: 0;*/
+    /*padding-left: 30px;*/
+    /*text-align: left;*/
+    /*width: 90%;*/
+/*}*/
+/*.header_search .search_cont{*/
+    /*position: absolute;*/
+    /*width: 63px;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*font-size: 16px;*/
+    /*border-radius: 15px;*/
+    /*top: 10px;*/
+    /*right: 10px;*/
+/*}*/
+/*首页九宫格菜单栏*/
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9{
+    border-top: none;
+    background-color: #fff;
+    margin:10px 0;
+}
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9 li{
+    border-right: none;
+    border-bottom: none;
+    padding: 0;
+}
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9 span{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    /*background-color: red;*/
+    /* -webkit-text-stroke-width: 0.2px; */
+}
+.mm_content .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+    margin-top: 3px;
+}
+.mm_content .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+    font-size: 13px;
+}
+/*促销*/
+.shouye_cuxiao{
+    height: 39px;
+    padding-top: 3px;
+    background-color: #e6e6e6;
+    position: relative;
+}
+.shouye_cuxiao span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+.shouye_cuxiao a{
+    display: block;
+}
+.shouye_cuxiao h3{
+    line-height: 35px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Microsolf-yahei";
+}
+/*促销内容商品*/
+.product{
+    /*padding-left: 8px;*/
+    min-height: 200px;
+    background-color: #fff;
+}
+.product ul li {
+    padding: 14px 8px;
+}
+.product ul .model_li a{
+    height: 100px;
+    display: block;
+    position: relative;
+}
+.product ul .model_li a img{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.product ul .model_li a .product_body{
+    height: 100%;
+    width: 100%;
+    padding-left: 100px;
+    font-size: 15px;
+    line-height: 19px;
+}
+.product ul .model_li a .product_body .price{
+    position: relative;
+    bottom:-30px;
+    font-size:12px;
+    color: #a1a1a1;
+    width: 100%;
+
+}
+.product .mui-table-view:after{
+    /*height: 0;*/
+}
+.product  .product_body .sum{
+    font-size: 12px;
+}
+.product  .product_body .sum i{
+    display: inline-block;
+    width: 22px;
+    font-size: 19px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+/*底部*/
+/*.footer{*/
+    /*/!*height: 50px;*!/*/
+    /*background-color: #F7F7F7;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.footer>a{*/
+    /*display: block;*/
+    /*line-height: 30px;*/
+    /*background-image: linear-gradient(#ffffff, #f4f4f4);*/
+    /*font-size: 13px;*/
+    /*border: 1px solid #dddddd;*/
+    /*border-radius: 4px;*/
+    /*margin: 10px;*/
+    /*text-align: center;*/
+    /*color: hsl(0, 58%, 50%);*/
+/*}*/
+/*.footer .shouye_cuxiao{*/
+    /*margin-top: 20px;*/
+    /*padding-top: 0;*/
+    /*height: 36px;*/
+    /*margin-bottom: 10px;*/
+
+/*}*/
+/*.foot_regist{*/
+    /*border-bottom: 1px solid #c4c4c4;*/
+    /*border-top: 1px solid #c4c4c4;*/
+/*}*/
+/*.foot_regist a{*/
+    /*display: inline-block;*/
+    /*height: 34px;*/
+    /*line-height: 34px;*/
+    /*font-size: 14px;*/
+    /*text-align: center;*/
+    /*color: hsl(0, 58%, 50%);*/
+    /*background-color: #EFEFEF;*/
+/*}*/
+/*.foot_regist a:first-of-type{*/
+    /*width: 30%;*/
+    /*border-right:1px solid #c4c4c4 ;*/
+/*}*/
+/*.foot_regist i{*/
+    /*color: #767877;*/
+     /*vertical-align: middle;*/
+/*}*/
+/*.foot_regist a:nth-of-type(2){*/
+     /*width: 30%;*/
+    /*border-right:1px solid #c4c4c4 ;*/
+ /*}*/
+/*.foot_regist a:nth-of-type(3){*/
+    /*width: 40%;*/
+/*}*/
+/*.footer .foot-cont{*/
+    /*background: #efefef;*/
+    /*font-size: 12px;*/
+    /*padding: 15px 0;*/
+    /*color: #5a5a5a;*/
+/*}*/
+/*.foot-cont p{*/
+    /*text-align: center;*/
+    /*font-size: 12px;*/
+    /*line-height: 14px;*/
+    /*margin-bottom: 0;*/
+    /*color: #333;*/
+
+/*}*/
+/*慢慢买下载固定在底部的*/
+/*.fixed{*/
+    /*position: fixed;*/
+    /*/!*z-index: 999;*!/*/
+    /*bottom: 30px;*/
+    /*right: 0;*/
+/*}*/
+/*.fixed a{*/
+    /*display: block;*/
+/*}*/
+/*.fixed a img{*/
+    /*width: 60px;*/
+/*}*/

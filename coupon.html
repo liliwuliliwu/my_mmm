@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>肯德基等优惠券 -- 慢慢买</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/mui.css"/>
+    <link rel="stylesheet" href="css/discount_coupon.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/discount_coupon.js"></script>
+    <script src="js/template.js"></script>
+</head>
+<body>
+<div class="">
+    <!--头部 -->
+    <header class="clearfix ">
+        <div class="fl header_l"><a href="index.html"><span class="mui-icon mui-icon-back"></span></a> </div>
+        优惠券
+        <div class="fr header_r"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!-- 优惠券内容-->
+
+    <div class="coupon_content">
+        <ul class="mui-table-view mui-grid-view mui-grid-9" id="coupon_list">
+        </ul>
+    </div>
+    <!-- 底部-->
+    <footer>
+        <div class="footer">
+            <div class="foot_top">
+               <div class="foot_top_top"><a href="index.html">首页</a>&nbsp;>&nbsp;<a href="#">优惠券</a></div>
+            </div>
+            <div class="foot_regist">
+                <a href="#">登录</a><a href="#">注册</a><a href="#"><i class="iconfont icon-xiangshang-copy"></i>返回顶部</a>
+            </div>
+            <div class="foot-cont">
+                <p class="foot_foot">
+                    <a href="#" style="color: red">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a> -- 掌上比价平台
+                </p>
+                <p><a href="#">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed">
+        <a href="#"><img src="images/manmanxiazai.png" alt=""/></a>
+    </div>
+
+</div>
+</body>
+<!--<script src="../js/mui.js"></script>-->
+<script type="text/html" id="coupon_template">
+    {{if result}}
+    {{each result as value i}}
+    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+        <a href="coupon_detail.html?{{value.couponId}}" titlename="{{value.couponTitle}}">
+            <img src={{value.couponImg}} alt=""/>
+            <div class="mui-media-body">{{value.couponTitle}}</div>
+        </a>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+
+</html>

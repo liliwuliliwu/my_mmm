@@ -1,0 +1,90 @@
+@charset "utf-8";
+//基本变量
+.margin_t0(){
+  margin-top: 0px;
+}
+.padding_0(){
+  padding: 0px;
+}
+.border_none(){
+  border: none;
+}
+//
+body {
+  background-color: #f2f2f2;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+.header_search {
+  background-color: #fff;
+}
+//主体内容部分
+.cat{
+  padding: 5px;
+  .panel-group{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    .panel.on .panel-heading .panel-title span{
+      transform: rotate(180deg);
+    }
+    .panel{
+      .margin_t0();
+      .panel-heading{
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-right: 0;
+        .panel-title a{
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          color: #000;
+          font-weight: 700;
+        }
+        .panel-title a:hover,.panel-title a:focus{
+          text-decoration: none;
+        }
+        .panel-title{
+          position: relative;
+        }
+        .panel-title span{
+          position: absolute;
+          right:16px;
+          top:12px;
+          color: #888;
+        }
+      }
+      .panel-body{
+        .border_none();
+        .padding_0();
+        table{
+          width: 100%;
+            td{
+              float: left;
+              background-color: #fff;
+              height: 40px;
+              line-height: 40px;
+              width: 33.33%;
+              border-bottom: 1px solid #ccc;
+              border-right: 1px solid #ccc;
+              a{
+                display: block;
+                color: #333;
+                text-align: center;
+              }
+            }
+            td:nth-of-type(3n){
+              border-right:none;
+            }
+        }
+      }
+    }
+  }
+}
+//底部
+.footer .foot_regist i{
+   margin-right: 2px;
+  font-size: 16px;
+  margin-top: -5px;
+}

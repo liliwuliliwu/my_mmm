@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>
+        白菜价--淘宝内部优惠券
+    </title>
+    <link rel="stylesheet" href="fonts/iconfont.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="less/baicai.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body>
+<div class="">
+    <!--头部 -->
+    <header class="clearfix " id="pageTop">
+        <div class="fl header_l"><a href="index.html" class="arrow"><span class="iconfont icon-jiantou-copy"></span></a>
+        </div>
+        白菜价--淘宝内部优惠券
+        <div class="fr header_r"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--具体内容-->
+    <div class="main">
+        <div class="tab">
+            <ul class="tab_cont clearfix">
+            </ul>
+        </div>
+        <div class="content">
+            <ul class="cont">
+                <!--<li class="">-->
+                    <!--<div class="all">-->
+                        <!--<div class="img"><img src="images/kdj.jpg" alt=""/></div>-->
+                        <!--<div class="content">-->
+                            <!--<div class="title">新品首发：COOLERMASTER 酷冷至尊 MasterLiquid Lite 240（冰神B240）水冷散热器<span-->
+                                    <!--class="fontcolor">39元，仅XL码</span></div>-->
+                            <!--<div class="other clearfix">-->
+                                <!--<span class="mall fl"><i>券后</i><em>&yen;</em>399.0<del>¥429</del></span>-->
+                            <!--</div>-->
+                            <!--<div class="progress">-->
+                                <!--<progress max="100" value="20"><ie style="width:20%;"></ie></progress>-->
+                            <!--</div>-->
+                            <!--<div class="coupon clearfix">-->
+                                <!--<div class="fl left">领30元优惠券</div>-->
+                                <!--<div class="fr rigth">下单链接</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</li>-->
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 分页-->
+
+    <!-- 底部-->
+    <footer>
+        <div class="footer">
+
+            <div class="foot_regist">
+                <a href="login.html">登录</a><a href="reg.html">注册</a><a href="#"><i
+                    class="iconfont icon-xiangshang-copy"></i>返回顶部</a>
+            </div>
+            <div class="foot-cont">
+                <p class="foot_foot">
+                    <a href="#" style="color: red">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a> -- 掌上比价平台
+                </p>
+
+                <p><a href="#">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed">
+        <!-- 加入锚点的方式是当库不支持时，js无法实现时，也能回到顶部-->
+        <a href="#pageTop"><span class="iconfont icon-xiangshangjiantouquan "></span></a>
+    </div>
+
+</div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/template.js"></script>
+<script src="js/swipe.js"></script>
+<script src="js/baicai.js"></script>
+
+
+</html>
+<!--内容模板-->
+<!--tab栏-->
+<script type="text/html" id="tabul">
+    {{if result}}
+    {{each result as value i}}
+    <li><a href="#">{{value.title}}</a></li>
+    {{/each}}
+    {{/if}}
+</script>
+
+<!--主体内容模板-->
+<script type="text/html" id="cont_mai">
+    {{if result}}
+    {{each result as value i}}
+    <li class="">
+        <div class="all">
+            <div class="img">{{#value.productImg}}</div>
+            <div class="content">
+                <div class="title">{{#value.productName}}</div>
+                <div class="other clearfix">
+                    <span class="mall fl">{{#value.productPrice}}</span>
+                </div>
+                <div class="progress">
+                   {{#value.productCouponRemain}}
+                </div>
+                <div class="coupon clearfix">
+                    <div class="fl left">{{#value.productCoupon}}</div>
+                    <div class="fr right">{{#value.productHref}}</div>
+                </div>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>

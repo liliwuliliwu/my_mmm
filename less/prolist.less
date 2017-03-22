@@ -1,0 +1,123 @@
+@charset "utf-8";
+//基本变量
+.margin_t0() {
+  margin-top: 0px;
+}
+
+.padding_0() {
+  padding: 0px;
+}
+
+.border_none() {
+  border: none;
+}
+
+//
+body {
+  background-color: #f2f2f2;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+
+.header_search {
+  background-color: #fff;
+}
+
+//主体部分
+.top_head {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-image: linear-gradient(#ffffff, #f4f4f4);
+  height: 36px;
+  line-height: 36px;
+  position: relative;
+  input[type="button"] {
+   position: absolute;
+    top: 3px;
+    right: 8px;
+    height: 30px;
+    line-height: 17px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+.product{
+  /*padding-left: 8px;*/
+  //min-height: 200px;
+  background-color: #fff;
+  .mui-table-view:after{
+    height: 0;
+  }
+}
+.product ul li {
+  padding: 14px 8px;
+  border-bottom: 1px solid #ccc;
+}
+.product ul li:nth-last-of-type(1){
+  border-bottom:none;
+}
+.product ul .model_li a{
+  height: 100px;
+  display: block;
+  position: relative;
+}
+.product ul .model_li a img{
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.product ul .model_li a .product_body{
+  height: 100%;
+  width: 100%;
+  padding-left: 100px;
+  font-size: 16px;
+  line-height: 24px;
+  .cont{
+    max-height: 48px;
+    word-break: break-all;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .other{
+    margin-top: 4px;
+    font-size:12px;
+    color: #a1a1a1;
+    padding-left: 10px;
+  }
+}
+//分页
+.con_bottom{
+  padding-top: 20px;
+}
+.con_bottom div{
+   float: left;
+    width: 33.3%;
+    height: 34px;
+  line-height: 34px;
+  text-align: center;
+  select{
+    width:100px;
+    height: 34px;
+    border: 1px solid #ccc  !important;
+  }
+
+}
+.con_bottom div a{
+  display: inline-block;
+  width: 82px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+  background: -moz-linear-gradient(top, #f1f1f1, #d4d4d4);
+  background: -o-linear-gradient(top,#f1f1f1, #d4d4d4);
+  border-bottom: 1px solid #bababa;
+}
+//底部
+.footer{
+  padding-top: 20px;
+}
+

@@ -1,0 +1,216 @@
+@charset "utf-8";
+body {
+  background-color: #f2f2f2;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+.header_search {
+  background-color: #fff;
+}
+.nav {
+  height: 36px;
+  background-color: #ebebeb;
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  font-size: 14px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+  background: -o-linear-gradient(top, #ffffff, #ebebeb);
+}
+.hot {
+  color: #874604;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.cat .ten li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+.cat .ten li a {
+  display: block;
+  position: relative;
+}
+.cat .ten li a span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: #c9c9c9;
+  color: #FFFFFF;
+  line-height: 20px;
+  vertical-align: top;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+.cat .ten li a .inner {
+  display: inline-block;
+}
+.cat .ten li a .inner .tit {
+  color: #000;
+  font-size: 16px;
+}
+.cat .ten li a .inner p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
+}
+.cat .ten li a:after {
+  content: ">";
+  display: block;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "simon";
+  color: #333;
+  font-size: 27px;
+  line-height: 36px;
+}
+.cat .ten li:nth-of-type(1) a span {
+  background-color: red;
+}
+.cat .ten li:nth-of-type(2) a span {
+  background-color: #ff9314;
+}
+.cat .ten li:nth-of-type(3) a span {
+  background-color: #8adf5b;
+}
+.cat .midtwo,
+.cat .midthree {
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+}
+.cat .sales ul li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.cat .sales ul li a {
+  display: block;
+}
+.cat .sales ul li a .pic {
+  float: left;
+  margin-right: 10px;
+}
+.cat .sales ul li a .pic img {
+  width: 100px;
+  height: 100px;
+}
+.cat .sales ul li a .info {
+  overflow: hidden;
+}
+.cat .sales ul li a .info .cont {
+  color: #333;
+  line-height: 22px;
+  min-height: 44px;
+}
+.cat .sales ul li a .info .price {
+  line-height: 24px;
+  height: 25px;
+  margin-top: 4px;
+}
+.cat .sales ul li a .info .price span {
+  font-size: 18px;
+  color: #ea3900;
+  vertical-align: middle;
+  float: left;
+}
+.cat .sales ul li a .info .price .star {
+  float: right;
+}
+.cat .sales ul li a .info .price .star i {
+  font-style: normal;
+  font-size: 13px;
+  color: #ff5500;
+}
+.cat .sales ul li a .info .other {
+  font-size: 12px;
+  line-height: 24px;
+  color: #999;
+}
+.cat .comment ul li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.cat .comment ul li a {
+  display: block;
+}
+.cat .comment ul li a .sigle {
+  margin-bottom: 10px;
+}
+.cat .comment ul li a .sigle .pic {
+  float: left;
+  margin-right: 10px;
+}
+.cat .comment ul li a .sigle .pic img {
+  width: 80px;
+  height: 80px;
+}
+.cat .comment ul li a .sigle .cont {
+  color: #999;
+  line-height: 22px;
+  font-size: 14px;
+  word-break: break-all;
+}
+.cat .comment ul li .spec {
+  margin-top: 6px;
+  background: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+  background-color: #f8f8f8;
+}
+.cat .comment ul li .spec a {
+  display: block;
+}
+.cat .comment ul li .spec a .name {
+  color: #4f6900;
+  font-size: 14px;
+}
+.cat .comment ul li .spec a .name i {
+  color: #ff5500;
+  font-style: normal;
+  font-size: 12px;
+}
+.cat .comment ul li .spec a .name .time {
+  color: #999;
+}
+.cat .comment ul li .spec a .con {
+  color: #000000;
+  margin-top: 10px;
+  line-height: 22px;
+  font-size: 15px;
+}
+.cat .comment ul li .spec::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 28px;
+  top: -8px;
+  border-bottom: 8px solid #e7e7e7;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.cat .comment ul li .spec::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 29px;
+  top: -8px;
+  border-bottom: 8px solid #f8f8f8;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+.footer .foot_regist i {
+  margin-right: 2px;
+  font-size: 16px;
+  margin-top: -5px;
+}

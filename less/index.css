@@ -1,0 +1,142 @@
+@charset "utf-8";
+body {
+  background-color: #fff;
+}
+.mm_layout {
+  min-width: 300px;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+/*搜索*/
+/*.header_search {*/
+  /*padding: 10px;*/
+  /*border-bottom: 1px solid #e6e6e6;*/
+  /*position: relative;*/
+/*}*/
+/*.header_search input[type="search"] {*/
+  /*height: 30px;*/
+  /*background-color: #f1f1f1;*/
+  /*border-radius: 15px;*/
+  /*margin-bottom: 0;*/
+  /*padding: 0;*/
+  /*padding-left: 30px;*/
+  /*text-align: left;*/
+  /*width: 90%;*/
+/*}*/
+/*.header_search .search_cont {*/
+  /*position: absolute;*/
+  /*width: 63px;*/
+  /*height: 30px;*/
+  /*line-height: 30px;*/
+  /*color: #fff;*/
+  /*text-align: center;*/
+  /*font-size: 16px;*/
+  /*border-radius: 15px;*/
+  /*top: 10px;*/
+  /*right: 10px;*/
+/*}*/
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9 {
+  border-top: none;
+  background-color: #fff;
+  margin: 10px 0;
+}
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9 li {
+  border-right: none;
+  border-bottom: none;
+  padding: 0;
+}
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9 li:nth-last-of-type(-n+4) {
+  display: none;
+}
+
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9 span {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 400;
+}
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9 span img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.mm_content .mui-table-view.mui-grid-view.mui-grid-9 .mui-media-body {
+  margin-top: 3px;
+  font-size: 13px;
+}
+.shouye_cuxiao {
+  height: 39px;
+  padding-top: 3px;
+  background-color: #e6e6e6;
+  position: relative;
+}
+.shouye_cuxiao span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+}
+.shouye_cuxiao a {
+  display: block;
+}
+.shouye_cuxiao h3 {
+  line-height: 35px;
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Microsolf-YaHei";
+}
+.product {
+  /*padding-left: 8px;*/
+  min-height: 200px;
+  background-color: #fff;
+}
+.product ul li {
+  padding: 14px 8px;
+}
+.product ul .model_li a {
+  height: 100px;
+  display: block;
+  position: relative;
+}
+.product ul .model_li a img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.product ul .model_li a .product_body {
+  height: 100%;
+  width: 100%;
+  padding-left: 100px;
+  font-size: 15px;
+  line-height: 19px;
+}
+.product ul .model_li a .product_body .price {
+  position: relative;
+  bottom: -30px;
+  font-size: 12px;
+  color: #a1a1a1;
+  width: 100%;
+}
+.product ul .model_li a .product_body .sum {
+  font-size: 12px;
+}
+.product ul .model_li a .product_body .sum i {
+  display: inline-block;
+  width: 22px;
+  font-size: 19px;
+  vertical-align: middle;
+  margin-right: 2px;
+}

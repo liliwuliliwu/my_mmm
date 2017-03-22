@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>
+        凑单品--慢慢买比价网
+    </title>
+    <link rel="stylesheet" href="fonts/iconfont.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="less/gsproduct.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body>
+<div class="">
+    <!--头部 -->
+    <header class="clearfix maincolor">
+        <div class="fl header_l"><a href="index.html" class="arrow"><span class="iconfont icon-jiantou-copy"></span></a>
+        </div>
+        凑单品
+        <div class="fr header_r"><a href="#"><img src="images/header_app.png" alt=""/></a></div>
+    </header>
+    <!--具体内容-->
+    <div class="coupon_content">
+        <div class="topbar">
+            <ul class="tit">
+                <li class="top_shop"><strong>京东</strong>
+                    <span class="iconfont icon-shixinjiantouxia"></span>
+                </li>
+                <li class="top_area">
+                    <strong>华北</strong>
+                    <span class="iconfont icon-shixinjiantouxia"></span>
+                </li>
+                <li class="top_price">
+                    <strong>全部价格</strong>
+                    <span class="iconfont icon-shixinjiantouxia"></span>
+                </li>
+                <div class="search"><span class="iconfont icon-3"></span></div>
+            </ul>
+
+            <div class="top_three">
+                <div class="shop hide">
+                    <ul class="shop_det">
+                        <!--<li class="active">京东</li>-->
+                        <!--<li>一号店</li>-->
+                        <!--<li>天猫超市</li>-->
+                    </ul>
+                </div>
+                <div class="area hide">
+                    <ul class="area_det">
+                        <!--<li class="active">华北（北京、山西等）</li>-->
+                        <!--<li>华北（北京、山西等）</li>-->
+                        <!--<li>华北（北京、山西等）</li>-->
+                        <!--<li>华北（北京、山西等）</li>-->
+                        <!--<li>华北（北京、山西等）</li>-->
+                    </ul>
+                </div>
+                <div class="detai_price hide">
+                    <ul class="price_all">
+                        <li class="active">全部价格</li>
+                        <li>1-3</li>
+                        <li>1-3元</li>
+                        <li>1-3元</li>
+                        <li>1-3元</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主体内容信息-->
+        <div>
+            <ul class="clearfix listall">
+                <!--<li class="list">-->
+                    <!--<a href="#">-->
+                        <!--<div><img src="images/kdj.jpg" alt=""/></div>-->
+                        <!--<div class="tite">-->
+                            <!--【京东超市】丝蓓绮（TSUBAKI）奢耀柔艳 洗发 护发 2件套（洗发露750ml+护发素750ml）-->
+                        <!--</div>-->
+                        <!--<div class="price">&yen;11.8</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!-- 底部-->
+    <footer>
+        <div class="footer">
+
+            <div class="foot_regist">
+                <a href="login.html">登录</a><a href="reg.html">注册</a><a href="#"><i
+                    class="iconfont icon-xiangshang-copy"></i>返回顶部</a>
+            </div>
+            <div class="foot-cont">
+                <p class="foot_foot">
+                    <a href="#" style="color: red">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a> -- 掌上比价平台
+                </p>
+
+                <p><a href="#">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed">
+        <a href="#"><img src="images/manmanxiazai.png" alt=""/></a>
+    </div>
+
+</div>
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="js/template.js"></script>
+<script src="js/gsproduct.js"></script>
+</html>
+<!--内容模板-->
+<!--店铺-->
+<script type="text/html" id="shop">
+    {{if result}}
+    {{each result as value i}}
+    <li shop="{{value.shopId}}">{{value.shopName}}</li>
+    {{/each}}
+    {{/if}}
+</script>
+
+<!--地区-->
+<script type="text/html" id="area">
+    {{if result}}
+    {{each result as value i}}
+    <li area="{{value.areaId}}">{{value.areaName}}</li>
+    {{/each}}
+    {{/if}}
+</script>
+
+<!--具体内容-->
+<script type="text/html" id="allcont">
+    {{if result}}
+    {{each result as value i}}
+<li class="list">
+    <a href="#">
+        <div class="img"><img src="{{value.productImg}}" alt=""/></div>
+        <div class="tite">
+            {{value.productName}}
+        </div>
+        <div class="price">{{value.productPrice}}</div>
+    </a>
+</li>
+    {{/each}}
+    {{/if}}
+</script>
