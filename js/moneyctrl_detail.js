@@ -3,6 +3,7 @@
  */
 $(function(){
     var productid=/\d+/.exec(location.search)[0];
+    console.log(productid);
     var hash=location.hash.slice(1);
     console.log(hash);
     var urlId;
